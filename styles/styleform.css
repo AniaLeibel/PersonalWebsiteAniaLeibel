@@ -1,0 +1,49 @@
+/* Form Section */
+
+.container {
+    margin-top: 150px; 
+    padding: 20px 40px; 
+    background: rgba(24, 16, 11, 0.2); 
+    border-radius: 10px; 
+    width: 100%;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 0;
+    outline: none;
+    background: #262626;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 16px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #262626;
+    color: #ababab;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form .btn2:hover {
+    background-color: #928159;
+    color: #fff;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+

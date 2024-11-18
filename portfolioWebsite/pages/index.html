@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Personal Portfolio Ania Leibel</title>
+  <script src="https://kit.fontawesome.com/b32638348d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="#placeholderlogo" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="/pages/portfolio.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software Develooper</p>
+        <h1>Hi, I'm <span>Ania</span><br>Leibel From Canada</h1>
+      </div>
+    </div>
+  </div>
+  <!--About Section-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1" >
+          <img src="../images/IMG_2221.png" alt="Ania">
+        </div>
+        <div class="about-col-2">
+          
+          <h1 class="sub-title">About Me</h1> <!--i changed this to sub-title from sub-titles-->
+          <p>I’m a passionate software developer and engineering project 
+            manager with an unstoppable drive to make a difference. I’m all about bringing 
+            ideas to life, pushing boundaries, and finding solutions that make an 
+            impact. Whether it’s diving into the world of code or coordinating complex 
+            projects, I see things through to the end with relentless determination.
+            Stepping out of my comfort zone isn’t just a challenge—it’s where I thrive.
+            I’m a fast learner, deep thinker, and problem-solver who isn’t afraid to 
+            question the status quo. My curiosity fuels everything I do, from exploring 
+            the intricacies of software development to contemplating the mysteries of the 
+            universe. With a love for philosophy, I’m always questioning, challenging, and 
+            expanding my understanding of the world.As someone who values honesty, transparency, 
+            and doing what’s right, I bring integrity to every project I take on. I believe that 
+            continuous improvement is key, which is why I’m constantly learning, adapting, and growing—both 
+            personally and professionally. Currently, I’m sharpening my skills through a software development 
+            bootcamp, where I’m exploring the fascinating world of front-end and back-end development. I’m 
+            fascinated by the way code allows me to be both creative and analytical, and I’m excited to bring 
+            my unique perspective to this field.
+          </p>
+
+          <div class="tab-titles"> <!--i changed this and then had to change back: to sub-title from sub-titles-->
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Advanced Software Development</span><br>Build scalable back-end services with Node.js, Express.js, and databases (SQL & NoSQL).
+                Integrate modern front-end frameworks with back-end APIs for seamless full-stack applications.</li>
+
+              <li><span>DevOps and Optimization</span><br>Streamline deployment with Docker and server management practices.
+                Leverage AI tools like GitHub Copilot for enhanced code quality, efficiency, and automated testing.</li>
+
+              <li><span>System Design and Mobile Application</span><br>Master system design, algorithms, and adapt development principles for mobile apps using React Native.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - Present</span><br>Full Stack Software Developer</li>
+              <li><span>2016 - Present</span><br>Engineering & Maintenance Project Manager</li>
+              <li><span>2012 - 2016</span><br>Supply Chain Specialist</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>September 2024 - present</span><br>Software Development Bootcamp, Circuit Stream UBC Extended Learning</li>
+              <li><span>2020 - 2021</span><br>Project Management, PMI</li>
+              <li><span>2012 - 2016</span><br>Bachaolor of Business Administration, Capilano University</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Back to the Top</a>
+
+    </div>
+  </div>
+  <!--Services Section-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Step 1: Initial Consultation</h2>
+          <p>Let's sit down over a coffee, tea, or your beverage of choice and have a conversation. I’d love to hear about how you began, what you’re currently working on, and your goals for the future. This is your opportunity to share your vision, and I’ll come prepared with thoughtful questions to guide our discussion.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Step 2: Design and Development</h2>
+          <p>Following the consultation, I’ll have the insights needed to begin working on the design. Together, we’ll go through two key rounds of revisions to refine the vision and set the foundation for a successful site build. During this stage, there will be clear communication as well as focused design and development efforts.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Step 3: Finishing Touches</h2>
+          <p>As we get close to the finish line, I’ll finalize any remaining content and ensure all the details are just right. Once the site is fully populated and polished, I’ll walk you through everything so you feel confident and ready to go before we launch your new site!</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+          <a href="#" class="btn">Back to the Top</a>
+    </div>
+  </div>
+
+<!----My Work Section-->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work-item">
+        <div class="work">
+          <img src="/portfolioWebsite/images/Rock_Paper_Scissor.jpg" alt="Rock Paper Scissor game play against computer">
+          <div class="layer">
+            <h3>Rock Paper Scissor Game</h3>
+            <p>The game connects people around the world in a fun and interactive way.</p>
+            <a href="/portfolioWebsite/myWork/pages/rockPaperScissor.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="vote-section">
+          <button class="vote-button" onclick="vote(0)">Vote</button>
+          <p class="vote-count" id="vote-count-0">Votes: 0</p>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work">
+          <img src="/portfolioWebsite/images/to_do_list.jpg" alt="Simple to do list with due date and delete button when task is completed.">
+          <div class="layer">
+            <h3>Simple To Do List</h3>
+            <p>Basic to do list for keeping tasks on track.</p>
+            <a href="/portfolioWebsite/myWork/pages/todolist.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="vote-section">
+          <button class="vote-button" onclick="vote(1)">Vote</button>
+          <p class="vote-count" id="vote-count-1">Votes: 0</p>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work">
+          <img src="/portfolioWebsite/images/shipping_calculator.jpg" alt="Amazon style calculator that adds $10 shipping cost to product cost.">
+          <div class="layer">
+            <h3>Amazon Shipping Calculator</h3>
+            <p>Shopping cart sample.</p>
+            <a href="/portfolioWebsite/myWork/pages/amazonshipcalc.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="vote-section">
+          <button class="vote-button" onclick="vote(2)">Vote</button>
+          <p class="vote-count" id="vote-count-2">Votes: 0</p>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">Back to the Top</a>
+  </div>
+</div>
+
+<!----Contact Section-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>leibelania@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>1(778)808-4549</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="/portfolioWebsite/Documents/ Leibel Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <!--Footer Section-->
+  <div class="copyright">
+    <p>Copyright Ania Leibel. Made with <i class="fa-solid fa-heart"></i> by Ania</p>
+  </div>
+</div>
+
+<script src="/portfolioWebsite/scripts/index.js"></script>
+
+</body>
+</html>

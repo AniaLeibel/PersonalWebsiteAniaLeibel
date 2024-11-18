@@ -1,0 +1,59 @@
+
+/* This is portfolio page video in place of future projects */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.182);
+    /*pointer-events: none; */
+}
+
+.button-text {
+    cursor: pointer;
+    color: white;
+    background-color: #18324e73;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.button-text:hover {
+    background-color: #0a488a7f;
+}
+
+.button-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+.button-link:hover {
+    cursor: pointer;
+    text-decoration: underline; /* Optional hover effect */
+}
+
+
+  

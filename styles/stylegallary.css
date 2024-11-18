@@ -1,0 +1,77 @@
+/* This is photo gallery styling css */
+
+.gallery-section {
+    margin: 80px;
+}
+
+.gallery-section h2 {
+    font-size: 2em;
+    color: #ed8004;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.gallery-item {
+    background: #8b3d1812;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.907);
+    padding: 10px 10px;
+    flex: 1 1 calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(2.3);
+}
+
+.gallery-item p {
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+    color: #f5f4ee;
+}
+
+@media (max-width: 800px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Ana's note - this adds padding and margin to bottom section only - took for ever to figure this one out */
+.gallery-section:last-of-type {
+    margin-bottom: 150px;
+    padding-bottom: 150px; 
+}
+
+

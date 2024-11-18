@@ -1,0 +1,60 @@
+/*This is css file for To Do list */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch; /* had to add this in to off set the alighn-items: center; in the todo-grid */
+}
+
+.name-input,
+.due-date-input {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.add-todo-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.delete-todo-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff004f;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: darkred;
+}

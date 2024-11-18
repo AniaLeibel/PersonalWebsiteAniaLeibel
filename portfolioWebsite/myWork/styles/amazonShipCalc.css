@@ -1,0 +1,34 @@
+
+/* CSS for Amazon Shipping Calculator */
+.cost-input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.calculate-button {
+  padding: 12px 15px;
+  font-size: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff004f;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: darkred;
+}
+
+

@@ -1,0 +1,86 @@
+/* This is Section About page css */
+
+
+.about-section {
+    background: #2213015a;
+    margin: 100px 20px 100px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.section-image {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.section-text {
+    flex: 2;
+}
+
+.section-text h2 {
+    font-size: 2.2em;
+    color: rgb(72, 146, 176);
+    margin-bottom: 15px;
+}
+
+.section-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #d4975d;
+}
+
+/* Responsive design using media queries to provide optimized experience across variety of devices */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content.reverse {
+        flex-direction: column;
+    }
+
+    .section-text {
+        margin-top: 20px;
+    }
+
+    .section-image {
+        max-width: 100%;
+    }
+}
+
+/* Ana's note - this adds padding and margin to bottom section only - took for ever to figure this one out */
+.about-section:last-of-type {
+    margin-bottom: 100px;
+    padding-bottom: 100px; 
+}

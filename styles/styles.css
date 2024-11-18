@@ -1,0 +1,172 @@
+/* This is css for nav, footer and index. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", serif;
+    /* (note for Ania - maybe "Montserrat", sans-serif;*/ 
+}
+
+
+ body{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), 
+    url("/images/IMG_6346\ copy.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed; /* This is super important, don't forget this in future - note to self! 
+    (Piyush - this took a while to figure out but I am so happy that i finally 
+    got this figured out, you can't see it but i did a little happy dance for this one, had to share my excitement with you here*/
+}
+
+.logo{
+    width: 100px;
+    color: #928159;
+    margin-left: 20px;  
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    padding: 5px 0;
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+}
+
+.nav-area {
+    list-style: none;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: auto;
+    padding-right: 20px;
+    display: flex; /* Align navigation items horizontally */
+    align-items: center;
+}
+
+.nav-area li {
+    display: inline-block;
+    margin: 10px 20px; /* Consistent spacing between items */
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    position: relative; /* Needed for pseudo-element positioning */
+}
+
+.nav-area li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #928159; /* Underline color */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease-in-out; /* Smooth expansion effect */
+}
+
+.nav-area li a:hover::after,
+.nav-area li a.active::after {
+    width: 100%; /* Fully expand the underline on hover or active */
+}
+
+.nav-area li a.active {
+    color: #928591; /* Optional: Change text color for active page */
+}
+
+.welcome-text {
+    position: absolute;
+    margin: 8% 20%;
+    text-align: center;
+    background: rgba(24, 16, 11, 0.111); 
+    padding: 80px 50px;
+    border: solid;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: #928159;
+    font-size: 70px;
+    font-weight: 500;
+    font-stretch: ultra-expanded;
+    margin-bottom: 30px; /* Adds spacing below the heading */
+}
+
+.welcome-text p {
+    color: #f8f9f1;
+    margin-bottom: 30px; /* Adds spacing between paragraphs */
+    line-height: 1.6; /* Adjusts line spacing for better readability */
+}
+
+.welcome-text a {
+    border: 1px solid #928159;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.welcome-text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+
+
+/* Footer Section CSS */
+.footer {
+    display: none; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #928159;
+    padding: 10px 20px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: right
+}
+
+.footer-section.left {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.footer-section.right {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Footer Links (note for Ania - could not find facebook profile - need to check on that and resolve later) */
+.footer-section a {
+    color: #928159;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-section a:hover {
+    color: #fff; 
+}
+
+
+body:hover .footer {
+    display: flex; 
+}

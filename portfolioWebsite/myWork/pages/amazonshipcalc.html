@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Shipping Calculator</title>
+  <link rel="stylesheet" href="../styles/amazonShipCalc.css">
+</head>
+<body>
+<!--steps for creating the logic:
+When we click the button:
+1. Get the text in the text box
+2. If amount <$40, add $10
+3. Display total on the page-->
+
+  <p>Amazon Shipping Calculator: adds $10 shipping cost to product cost and diplays total cost.</p>
+
+  <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="
+    handleCostKeydown(event);
+  ">
+
+  <button onclick="
+    calculateTotal();
+    "class="calculate-button"
+  ">Calculate</button>
+
+  <p class="js-total-cost"></p>
+
+  </div>
+    <p><a href="/portfolioWebsite/pages/index.html" class="btn">Back Home</a></p>
+  </div>
+
+<script src="/portfolioWebsite/myWork/scripts/amazonShipCalc.js"></script>
+
+</body>
+</html>
